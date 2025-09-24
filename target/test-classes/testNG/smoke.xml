@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Smoke Test Suite" verbose="1">
+    <parameter name="environment" value="dev"/>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="User API Smoke Tests">
+        <classes>
+            <class name="com.api.testing.tests.UserAPITests">
+                <methods>
+                    <include name="testGetAllUsers"/>
+                    <include name="testGetUserById"/>
+                    <include name="testCreateUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Posts API Smoke Tests">
+        <classes>
+            <class name="com.api.testing.tests.PostsAPITests">
+                <methods>
+                    <include name="testGetAllPosts"/>
+                    <include name="testGetPostById"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

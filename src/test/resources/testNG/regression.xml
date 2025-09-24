@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Regression Test Suite" parallel="methods" thread-count="3" verbose="1">
+    <parameter name="environment" value="dev"/>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Complete User API Tests">
+        <classes>
+            <class name="com.api.testing.tests.UserAPITests"/>
+        </classes>
+    </test>
+
+    <test name="Complete Posts API Tests">
+        <classes>
+            <class name="com.api.testing.tests.PostsAPITests"/>
+        </classes>
+    </test>
+</suite>

@@ -5,11 +5,15 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import io.qameta.allure.restassured.AllureRestAssured;
+
+import java.util.logging.Logger;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import config.ConfigReader;
 import utils.ExtentManager;
+import utils.LoggerUtils;
 
 /**
  * Base Test class providing common setup and utilities
@@ -22,7 +26,8 @@ public class BaseTest {
 
     @BeforeClass
     public void globalSetup() {
-        System.out.println("🚀 Starting API Test Suite...");
+        LoggerUtils.success("Starting API Test Suite...");
+        LoggerUtils.loading("Loading configuration...");
 
         // Load configuration
         config = new ConfigReader();

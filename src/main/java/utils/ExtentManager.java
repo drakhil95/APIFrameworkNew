@@ -16,9 +16,11 @@ public class ExtentManager {
     public static void initReports() {
         if (extent == null) {
             ExtentSparkReporter spark = new ExtentSparkReporter("target/extent-reports/ExtentReport.html");
-            spark.config().setTheme(Theme.STANDARD);
-            spark.config().setDocumentTitle("API Test Report");
-            spark.config().setReportName("REST Assured Test Results");
+            spark.config().setTheme(Theme.DARK);
+            spark.config().setDocumentTitle("Test_Report");
+            spark.config().setReportName("Test_Results_" + JavaUtils.getCurrentTimestamp());
+            spark.config().setEncoding("utf-8");
+            spark.config().setTimeStampFormat("dd-MM-yyyy HH:mm:ss");
 
             extent = new ExtentReports();
             extent.attachReporter(spark);

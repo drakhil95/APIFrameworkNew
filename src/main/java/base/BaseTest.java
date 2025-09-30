@@ -6,8 +6,6 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import io.qameta.allure.restassured.AllureRestAssured;
 
-import java.util.logging.Logger;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
@@ -43,9 +41,9 @@ public class BaseTest {
         // Setup ExtentReports
         ExtentManager.createTest("API Test Suite", "Testing REST APIs");
 
-        System.out.println("✅ Base configuration completed");
-        System.out.println("🌐 Base URL: " + RestAssured.baseURI);
-    }
+        LoggerUtils.success("Base configuration completed");
+        LoggerUtils.info("Environment: " + config.getEnvironment());
+        LoggerUtils.info("Base URL: " + RestAssured.baseURI + ":" + RestAssured.port + RestAssured.basePath);}
     
 
     @BeforeMethod

@@ -58,6 +58,9 @@ public class ConfigReader {
     public long getConnectionTimeout() { return Long.parseLong(properties.getProperty("connection.timeout", "10000")); }
     public String getReportsName() { return properties.getProperty("reports.name", "API Test Report"); }
     public int getThreadCount() { return Integer.parseInt(properties.getProperty("thread.count", "2")); }
+    public String getDbUrl() { return properties.getProperty("db.url", "jdbc:mysql://localhost:3306/testdb"); }
+    public String getDbUsername() { return properties.getProperty("db.username", "root"); }
+    public String getDbPassword() { return properties.getProperty("db.password", "password"); }
 
     public String getProperty(String key) {
         return properties.getProperty(key);

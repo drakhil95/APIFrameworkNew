@@ -1,0 +1,11 @@
+base\BaseTest.class
+config\ConfigReader.class
+utils\APIUtils.class
+mdoels\response\UserResponse.class
+utils\DBUtills.class
+utils\LoggerUtils.class
+utils\ThreadLocalClass.class
+services\UserService.class
+utils\JavaUtils.class
+mdoels\request\UserRequest.class
+utils\ExtentManager.class

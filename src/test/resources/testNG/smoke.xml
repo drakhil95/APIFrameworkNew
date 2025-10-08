@@ -8,7 +8,7 @@
 
     <test name="User API Smoke Tests">
         <classes>
-            <class name="com.api.testing.tests.UserAPITests">
+            <class name="Users.UserAPITests">
                 <methods>
                     <include name="testGetAllUsers"/>
                     <include name="testGetUserById"/>
@@ -20,7 +20,7 @@
 
     <test name="Posts API Smoke Tests">
         <classes>
-            <class name="com.api.testing.tests.PostsAPITests">
+            <class name="Users.PostsAPITests">
                 <methods>
                     <include name="testGetAllPosts"/>
                     <include name="testGetPostById"/>

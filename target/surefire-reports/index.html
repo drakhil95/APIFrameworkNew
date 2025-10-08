@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-API_Smoke_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">API Smoke Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\Nikhil\Downloads\APIFrameworkNew\src\test\resources\testNG\smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-API_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-API_Smoke_Test_Suite" class="hide-methods failed suite-API_Smoke_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-API_Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-API_Smoke_Test_Suite" class="show-methods failed suite-API_Smoke_Test_Suite"> (show)</a> <!-- show-methods failed suite-API_Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-API_Smoke_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.UserAPITests" class="method navigator-link" hash-for-method="testGetAllUsers">testGetAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.UserAPITests" class="method navigator-link" hash-for-method="testGetUserById">testGetUserById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-API_Smoke_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Smoke_Test_Suite" class="hide-methods passed suite-API_Smoke_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-API_Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-API_Smoke_Test_Suite" class="show-methods passed suite-API_Smoke_Test_Suite"> (show)</a> <!-- show-methods passed suite-API_Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Smoke_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.UserAPITests" class="method navigator-link" hash-for-method="testCreateUser(Donna Bradtke, dustin.weber, salina.ernser@yahoo.com)">testCreateUser(Donna Bradtke, dustin.weber, salina.ernser@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.UserAPITests" class="method navigator-link" hash-for-method="testCreateUser(Miles Koepp, vilma.nitzsche, donette.hammes@gmail.com)">testCreateUser(Miles Koepp, vilma.nitzsche, donette.hammes@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.UserAPITests" class="method navigator-link" hash-for-method="testCreateUser(Melina Welch, hayley.ohara, dexter.kub@yahoo.com)">testCreateUser(Melina Welch, hayley.ohara, dexter.kub@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.PostsAPITests" class="method navigator-link" hash-for-method="testGetAllPosts">testGetAllPosts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Smoke_Test_Suite" title="Users.PostsAPITests" class="method navigator-link" hash-for-method="testGetPostById">testGetPostById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Smoke_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Smoke_Test_Suite" class="panel API_Smoke_Test_Suite">
+          <div class="suite-API_Smoke_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Users.UserAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllUsers">
+                  </a> <!-- testGetAllUsers -->
+                  <span class="method-name">testGetAllUsers</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to convert JSON to object
+	at utils.APIUtils.fromJson(APIUtils.java:34)
+	at services.UserService.convertToUserResponseArray(UserService.java:130)
+	at Users.UserAPITests.testGetAllUsers(UserAPITests.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;address&quot; (class mdoels.response.UserResponse), not marked as ignorable (6 known properties: &quot;username&quot;, &quot;id&quot;, &quot;email&quot;, &quot;phone&quot;, &quot;name&quot;, &quot;website&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 7, column: 17] (through reference chain: java.lang.Object[][0]-&gt;mdoels.response.UserResponse[&quot;address&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:217)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3814)
+	at utils.APIUtils.fromJson(APIUtils.java:32)
+	... 34 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserById">
+                  </a> <!-- testGetUserById -->
+                  <span class="method-name">testGetUserById</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to convert JSON to object
+	at utils.APIUtils.fromJson(APIUtils.java:34)
+	at services.UserService.convertToUserResponse(UserService.java:123)
+	at Users.UserAPITests.testGetUserById(UserAPITests.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;address&quot; (class mdoels.response.UserResponse), not marked as ignorable (6 known properties: &quot;username&quot;, &quot;id&quot;, &quot;email&quot;, &quot;phone&quot;, &quot;name&quot;, &quot;website&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 15] (through reference chain: mdoels.response.UserResponse[&quot;address&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3814)
+	at utils.APIUtils.fromJson(APIUtils.java:32)
+	... 34 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Smoke_Test_Suite-class-failed -->
+          <div class="suite-API_Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Users.UserAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Donna Bradtke, dustin.weber, salina.ernser@yahoo.com)">
+                  </a> <!-- testCreateUser(Donna Bradtke, dustin.weber, salina.ernser@yahoo.com) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Donna Bradtke,dustin.weber,salina.ernser@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Miles Koepp, vilma.nitzsche, donette.hammes@gmail.com)">
+                  </a> <!-- testCreateUser(Miles Koepp, vilma.nitzsche, donette.hammes@gmail.com) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Miles Koepp,vilma.nitzsche,donette.hammes@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Melina Welch, hayley.ohara, dexter.kub@yahoo.com)">
+                  </a> <!-- testCreateUser(Melina Welch, hayley.ohara, dexter.kub@yahoo.com) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Melina Welch,hayley.ohara,dexter.kub@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Smoke_Test_Suite-class-passed -->
+          <div class="suite-API_Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Users.PostsAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllPosts">
+                  </a> <!-- testGetAllPosts -->
+                  <span class="method-name">testGetAllPosts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPostById">
+                  </a> <!-- testGetPostById -->
+                  <span class="method-name">testGetPostById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Smoke_Test_Suite-class-passed -->
+        </div> <!-- panel API_Smoke_Test_Suite -->
+        <div panel-name="test-xml-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nikhil\Downloads\APIFrameworkNew\src\test\resources\testNG\smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;API Smoke Test Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;dev&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User API Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Users.UserAPITests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testGetAllUsers&quot;/&gt;
+          &lt;include name=&quot;testGetUserById&quot;/&gt;
+          &lt;include name=&quot;testCreateUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Users.UserAPITests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User API Smoke Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Posts API Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Users.PostsAPITests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testGetAllPosts&quot;/&gt;
+          &lt;include name=&quot;testGetPostById&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Users.PostsAPITests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Posts API Smoke Tests --&gt;
+&lt;/suite&gt; &lt;!-- API Smoke Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">User API Smoke Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Posts API Smoke Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Smoke_Test_Suite');
+function tableData_API_Smoke_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testGetAllUsers')
+data.setCell(0, 2, 'Users.UserAPITests')
+data.setCell(0, 3, 2871);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGetAllPosts')
+data.setCell(1, 2, 'Users.PostsAPITests')
+data.setCell(1, 3, 1750);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGetPostById')
+data.setCell(2, 2, 'Users.PostsAPITests')
+data.setCell(2, 3, 653);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCreateUser')
+data.setCell(3, 2, 'Users.UserAPITests')
+data.setCell(3, 3, 642);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCreateUser')
+data.setCell(4, 2, 'Users.UserAPITests')
+data.setCell(4, 3, 606);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCreateUser')
+data.setCell(5, 2, 'Users.UserAPITests')
+data.setCell(5, 3, 603);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetUserById')
+data.setCell(6, 2, 'Users.UserAPITests')
+data.setCell(6, 3, 505);
+window.suiteTableData['API_Smoke_Test_Suite']= { tableData: data, tableDiv: 'times-div-API_Smoke_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-API_Smoke_Test_Suite">
+              </div> <!-- times-div-API_Smoke_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Users.UserAPITests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGetUserNotFound</span>
+                <br/>
+                <span class="ignored-method-name">testUserDataValidation</span>
+                <br/>
+                <span class="ignored-method-name">testDeleteUser</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Users.PostsAPITests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGetPostsByUser</span>
+                <br/>
+                <span class="ignored-method-name">testCreatePost</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Users.UserAPITests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">globalSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupUserTests</span>
+                <span class="method-start">860 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">911 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initUserService</span>
+                <span class="method-start">1496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetAllUsers</span>
+                <span class="method-start">1501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">4395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initUserService</span>
+                <span class="method-start">4400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetUserById</span>
+                <span class="method-start">4403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">5140 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initUserService</span>
+                <span class="method-start">5151 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Miles Koepp, vilma.nitzsche, donette.hammes@gmail.com)</span>
+                <span class="method-start">5154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">5801 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initUserService</span>
+                <span class="method-start">5809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Donna Bradtke, dustin.weber, salina.ernser@yahoo.com)</span>
+                <span class="method-start">5812 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">6419 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initUserService</span>
+                <span class="method-start">6425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Melina Welch, hayley.ohara, dexter.kub@yahoo.com)</span>
+                <span class="method-start">6428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownUserTests</span>
+                <span class="method-start">7038 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Users.PostsAPITests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">globalSetup</span>
+                <span class="method-start">7312 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPostsTests</span>
+                <span class="method-start">7314 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">7315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAllPosts</span>
+                <span class="method-start">7324 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupRequest</span>
+                <span class="method-start">9079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetPostById</span>
+                <span class="method-start">9086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownPostsTests</span>
+                <span class="method-start">9746 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

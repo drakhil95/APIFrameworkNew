@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Smoke Test Suite]" verbose="0">
+  <parameter name="environment" value="dev"/>
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="5" name="User API Smoke Tests(failed)" verbose="0">
+    <classes>
+      <class name="Users.UserAPITests">
+        <methods>
+          <include name="testGetUserById"/>
+          <include name="testGetAllUsers"/>
+          <include name="globalSetup"/>
+          <include name="setupRequest"/>
+          <include name="tearDownUserTests"/>
+          <include name="initUserService"/>
+          <include name="setupUserTests"/>
+        </methods>
+      </class> <!-- Users.UserAPITests -->
+    </classes>
+  </test> <!-- User API Smoke Tests(failed) -->
+</suite> <!-- Failed suite [API Smoke Test Suite] -->

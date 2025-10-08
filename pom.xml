@@ -91,14 +91,14 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.4</version>
         </dependency>
+        
+         <!-- Lombok for boilerplate codo -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency>
     </dependencies>
-
-    <!-- Lombok for boilerplate codo -->
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.42</version>
-    </dependency>
 
     <build>
         <plugins>

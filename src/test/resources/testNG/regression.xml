@@ -8,13 +8,13 @@
 
     <test name="Complete User API Tests">
         <classes>
-            <class name="com.api.testing.tests.UserAPITests"/>
+           <class name="Users.UserAPITests"/>
         </classes>
     </test>
 
     <test name="Complete Posts API Tests">
         <classes>
-            <class name="com.api.testing.tests.PostsAPITests"/>
+            <class name="Users.PostsAPITests"/>
         </classes>
     </test>
 </suite>

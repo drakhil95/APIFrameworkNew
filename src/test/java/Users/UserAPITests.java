@@ -33,6 +33,12 @@ public class UserAPITests extends BaseTest {
         System.out.println("✅ User API Tests setup completed\n");
     }
 
+    @BeforeMethod
+    public void initUserService() {
+        // initialize userService after BaseTest.setupRequest() runs so requestSpec is available
+        userService = new UserService(getRequest());
+    }
+
     @Test(priority = 1)
     @Story("Get All Users")
     @Description("Verify that API returns list of all users")
